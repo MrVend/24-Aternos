@@ -4,10 +4,10 @@ console.log('Starting...')
 
 function createBot () {
     const bot = mineflayer.createBot({
-    host: "localhost",
-    port: "25565",
-    username: "24ATERNOSBOT",
-    version: false
+    host: "OnlyWorldRP.aternos.me",
+    port: "25734",
+    username: "VendixBOT(original)",
+    version: 1.16.5
     })
     bot.on('login', function() {
       bot.chat('/reginster 123123123 123123123')
@@ -17,7 +17,7 @@ function createBot () {
       if (username === bot.username) return
       switch (message) {
         case ';start':
-          bot.chat('24 ATERNOS > Bot started! - Made By Fortcote')
+          bot.chat('Бот запущен.')
           bot.setControlState('forward', true)
           bot.setControlState('jump', true)
           bot.setControlState('sprint', true)
